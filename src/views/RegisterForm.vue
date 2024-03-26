@@ -142,7 +142,11 @@ h3 {
   position: relative;
 
 }
-
+label{
+  display: inline-block;
+    cursor: default;
+    float: inherit
+}
 .error-msg {
   color: rgb(238, 0, 0);
 }
@@ -214,6 +218,8 @@ p {
   border-radius: 1rem;
   border: none;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .card-header:first-child {

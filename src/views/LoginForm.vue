@@ -69,9 +69,7 @@
 .form-group {
   margin-bottom: 15px; /* Adjust this value as needed */
 }
-.form-group input::placeholder {
-  padding-left: 10px; /* Adjust this value as needed */
-}
+
 
 .mb-4 {
     margin-bottom: 1.5rem !important;
@@ -163,6 +161,8 @@ p {
     border-radius: 1rem;
     border: none;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .card-header:first-child {
@@ -263,5 +263,15 @@ a {
 
 .text-center {
     text-align: center !important;
+}
+
+.form-check-label {
+    display: inline-block;
+    cursor: default;
+}
+label{
+  display: inline-block;
+    cursor: default;
+    float: inherit
 }
 </style>

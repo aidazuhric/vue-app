@@ -21,8 +21,8 @@ export default {
 </script>
 
 <style>
-body{
-    margin-top:-3.8%;
+body, html{
+  margin-top: 0!important;
 }
 
 /* .charts{

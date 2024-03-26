@@ -1,251 +1,498 @@
 <template>
     <section class="mb-5">
-      <div class="card-table mb-4 card">
-        <div class="card-header">
-          <h4 class="card-heading">List of all products</h4>
+        <div class="card card-table mb-4">
+            <div class="card-header">
+                <div class="card-heading">Data Table - Card Table</div>
+            </div>
+            <div class="dataTable-wrapper dataTable-loading no-footer sortable fixed-columns">
+                <div class="dataTable-top">
+                    <div class="dataTable-dropdown"><label><select
+                                class="dataTable-selector form-select form-select-sm">
+                                <option value="5">5</option>
+                                <option value="10" selected="">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                            </select> entries per page</label></div>
+                </div>
+                <div class="dataTable-container border-0">
+                    <table class="table table-hover mb-0 dataTable-table" id="datatable2">
+                        <thead>
+                            <tr>
+                                <th data-sortable="" style="width: 13.308%;"><a href="#"
+                                        class="dataTable-sorter">Name</a></th>
+                                <th data-sortable="" style="width: 14.1952%;"><a href="#"
+                                        class="dataTable-sorter">Company</a></th>
+                                <th data-sortable="" style="width: 33.3333%;"><a href="#"
+                                        class="dataTable-sorter">Email</a></th>
+                                <th data-sortable="" style="width: 10.8999%;"><a href="#"
+                                        class="dataTable-sorter">Phone</a></th>
+                                <th data-sortable="" style="width: 13.5615%;"><a href="#"
+                                        class="dataTable-sorter">City</a></th>
+                                <th data-sortable="" style="width: 14.7022%;"><a href="#"
+                                        class="dataTable-sorter">Orders</a></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="javascript:void(0)" class="text-muted">Nielsen Cobb</a></td>
+                                <td>Memora</td>
+                                <td>nielsencobb@memora.com</td>
+                                <td>+1 (851) 552-2735</td>
+                                <td>Graniteville</td>
+                                <td>0 </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" class="text-muted">Margret Cote</a></td>
+                                <td>Zilidium</td>
+                                <td>margretcote@zilidium.com</td>
+                                <td>+1 (893) 532-2218</td>
+                                <td>Foxworth</td>
+                                <td>2 </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" class="text-muted">Rachel Vinson</a></td>
+                                <td>Chorizon</td>
+                                <td>rachelvinson@chorizon.com</td>
+                                <td>+1 (891) 494-2060</td>
+                                <td>Eastmont</td>
+                                <td>5 </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" class="text-muted">Gabrielle Aguirre</a></td>
+                                <td>Comverges</td>
+                                <td>gabrielleaguirre@comverges.com</td>
+                                <td>+1 (805) 459-3869</td>
+                                <td>Whitewater</td>
+                                <td>0 </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" class="text-muted">Spears Collier</a></td>
+                                <td>Remold</td>
+                                <td>spearscollier@remold.com</td>
+                                <td>+1 (910) 555-2436</td>
+                                <td>Hebron</td>
+                                <td>1 </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" class="text-muted">Keisha Thomas</a></td>
+                                <td>Euron</td>
+                                <td>keishathomas@euron.com</td>
+                                <td>+1 (958) 405-3392</td>
+                                <td>Levant</td>
+                                <td>10 </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" class="text-muted">Elisabeth Key</a></td>
+                                <td>Netagy</td>
+                                <td>elisabethkey@netagy.com</td>
+                                <td>+1 (900) 421-2096</td>
+                                <td>Nile</td>
+                                <td>0 </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" class="text-muted">Patel Mack</a></td>
+                                <td>Zedalis</td>
+                                <td>patelmack@zedalis.com</td>
+                                <td>+1 (800) 460-2720</td>
+                                <td>Albrightsville</td>
+                                <td>2 </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" class="text-muted">Erika Whitaker</a></td>
+                                <td>Uniworld</td>
+                                <td>erikawhitaker@uniworld.com</td>
+                                <td>+1 (911) 484-3333</td>
+                                <td>Leola</td>
+                                <td>8 </td>
+                            </tr>
+                            <tr>
+                                <td><a href="javascript:void(0)" class="text-muted">Meyers Swanson</a></td>
+                                <td>Candecor</td>
+                                <td>meyersswanson@candecor.com</td>
+                                <td>+1 (999) 404-3297</td>
+                                <td>Finderne</td>
+                                <td>3 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dataTable-bottom">
+                    <div class="dataTable-info">Showing 1 to 10 of 100 entries</div>
+                    <nav class="dataTable-pagination">
+                        <ul class="dataTable-pagination-list">
+                            <li class="active"><a href="#" data-page="1">1</a></li>
+                            <li class=""><a href="#" data-page="2">2</a></li>
+                            <li class=""><a href="#" data-page="3">3</a></li>
+                            <li class=""><a href="#" data-page="4">4</a></li>
+                            <li class=""><a href="#" data-page="5">5</a></li>
+                            <li class=""><a href="#" data-page="6">6</a></li>
+                            <li class=""><a href="#" data-page="7">7</a></li>
+                            <li class="ellipsis"><a href="#">…</a></li>
+                            <li class=""><a href="#" data-page="10">10</a></li>
+                            <li class="pager"><a href="#" data-page="2">›</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <div class="dataTable-wrapper no-footer sortable fixed-columns">
-          <div class="dataTable-container border-0">
-            <table class="table mb-0 table-hover align-middle table-borderless dataTable-table">
-              <thead>
-                <tr>
-                  <th data-sortable>
-                    <a href="#" class="dataTable-sorter">Product name</a>
-                  </th>
-                  <th data-sortable>
-                    <a href="#" class="dataTable-sorter">Product Type</a>
-                  </th>
-                  <th data-sortable>
-                    <a href="#" class="dataTable-sorter">Product Category</a>
-                  </th>
-                  <th data-sortable>
-                    <a href="#" class="dataTable-sorter">Action</a>
-                  </th>
-                  <th data-sortable>
-                    <a href="#" class="dataTable-sorter">Map</a>
-                  </th>
-                </tr>
-              </thead>
-              <!-- Your tbody and modal content commented out for brevity -->
-            </table>
-          </div>
-        </div>
-      </div>
     </section>
-  </template>
+</template>
 
 <script>
-    export default {
+export default {
     name: 'ProductsTable',
-    
+
 }
 </script>
 
 <style>
-*{
-    box-sizing: border-box;
+div {
+  display: block;
 }
-.align-items-stretch{
-    align-items: stretch!important;
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
 }
-
-.d-flex{
-     display: flex!important;
-}
-
-.page-holder{
-    display: flex;
-    overflow-x: hidden;
-    width: 100%;
-    min-height: calc(100vh - 72px);
-    padding-top: 3rem;
-    flex-wrap: wrap;
-}
-
-
-.container-fluid{
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.page-header{
-    margin-bottom: 3rem;
-}
-
-.align-items-center{
-    align-items: center!important;
-}
-
-.justify-content-between{
-    justify-content: space-between!important;
-}
-
-.d-flex{
-    display: flex!important;
-}
-
-.page-heading{
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    font-weight: 300;
-}
-
-h1{
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-a{
-    text-decoration: none;
-}
-.text-uppercase{
-    letter-spacing: .2em;
-}
-
-.btn{
-    display: inline-block;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: .9rem;
-    border-radius: .25rem;
-}
-
-.btn-primary{
-    color: #fff;
-    background-color: #4650dd;
-    border-color: #4650dd;
-}
-
 .mb-5{
-    margin-bottom: 3rem!important;
+    margin-bottom: 3rem !important;
+    margin-left: 20%;
+    margin-right: 3%;
 }
-
-.dataTable-wrapper{
-    background: #f8f9fa;
-    overflow-x: auto;
-    max-width: 100%;
+.page-header {
+  margin-bottom: 3rem;
+  margin-top: 3%;
+  margin-left: 0 !important;
 }
-.dataTable-top{
-    font-size: .7875rem;
-    padding: 2rem;
-    background: #f8f9fa;
+.error-msg{
+    color: rgb(238, 0, 0);
 }
-
-.dataTable-dropdown>div:last-child {
-    float: right;
+.align-items-center {
+  align-items: center !important;
 }
-
+.justify-content-between {
+  justify-content: space-between !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.page-header {
+  margin-bottom: 3rem;
+}
+.align-items-center {
+  align-items: center !important;
+}
+.justify-content-between {
+  justify-content: space-between !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.page-heading {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+  font-size: 45px;
+}
+.text-sm {
+  font-size: 0.7875rem !important;
+}
+.list-inline,
+.list-unstyled {
+  list-style: none;
+}
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.list-inline-item {
+  display: inline-block;
+}
+.text-gray-600 {
+  color: #6c757d !important;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+  letter-spacing: 0.2em;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #4650dd;
+  border-color: #4650dd;
+}
+.btn {
+  display: inline-block;
+}
+select {
+  font-family: "Poppins", sans-serif;
+}
+.form-modal {
+  font-size: 14px;
+  padding: 8px;
+  color: #6c757d;
+}
+.mb-4 {
+  margin-bottom: 3rem !important;
+  overflow: hidden;
+  position: relative;
+}
+.nav {
+  margin-left: 0;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-bottom-width: 5px;
+  margin-bottom: -3px;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #4650dd;
+  background-color: transparent;
+  border-color: transparent transparent #4650dd;
+}
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #4650dd;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+.nav-tabs .nav-link {
+  border-left-width: 0;
+  border-right-width: 0;
+  background: none;
+}
+button,
+select {
+  text-transform: none;
+}
+button {
+  border-radius: 0;
+}
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  isolation: isolate;
+}
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: #212bb5;
+  text-decoration: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.card-table {
+  margin-left: 0 !important;
+}
+.card {
+  margin-top: 1.5%;
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  border-radius: 1rem;
+  margin-left: 2%;
+}
+.card-header:first-child {
+  border-radius: calc(1rem - 1px) calc(1rem - 1px) 0 0;
+}
+.card-header {
+  padding: 2rem;
+  border-bottom: none;
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+  margin-bottom: 0;
+}
+.card-heading {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+/* .mb-4 {
+  margin-bottom: 1.5rem !important;
+} */
+.dataTable-wrapper {
+  background: #f8f9fa;
+  overflow-x: auto;
+  max-width: 100%;
+}
+.dataTable-top {
+  font-size: 0.7875rem;
+  padding: 2rem;
+  background: #f8f9fa;
+}
+.dataTable-dropdown > div:last-child {
+  float: right;
+}
 label {
-    display: inline-block;
-    cursor: default;
+  display: inline-block;
+  cursor: default;
+  float: right;
+  margin-bottom: 3%;
 }
-
 .dataTable-selector {
-    display: inline!important;
-    width: auto;
+  display: inline !important;
+  width: auto;
 }
-
 .form-select-sm {
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-    padding-left: .5rem;
-    font-size: .7875rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  font-size: 0.7875rem;
 }
-.form-select{
-    padding: .200rem 1.25rem .300rem .50rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #343a40;
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: right  center;
-    background-size: 16px 12px;
-    border: 1px solid #ced4da;
+.form-select {
+  padding: 0.2rem 1.25rem 0.3rem 0.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #343a40;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
 }
-
-select{
-    text-transform: none;
-    margin: 0;
-    letter-spacing: normal;
-    word-spacing: normal;
-    display: inline-block;
-    text-align: start;
-    box-sizing: border-box;
-    align-items: center;
-    font: 400 13.3333px Arial;
-    border-radius: 0px;
-    border-width: 1px;
-    border-style: solid;
-    cursor: pointer;
-}
-
 .dataTable-input.form-control-sm {
-    padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
 }
-
-.dataTable-container{
-    border: 0;
+select {
+  text-transform: none;
+  margin: 0;
+  letter-spacing: normal;
+  word-spacing: normal;
+  display: inline-block;
+  text-align: start;
+  box-sizing: border-box;
+  align-items: center;
+  font: 400 13.3333px Arial;
+  border-radius: 0px;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
 }
-
-.border-0 {
-    border: 0!important;
+.dataTable-container {
+  border: 0;
 }
-
 .card-table .dataTable-table {
-    background: #fff;
+  background: #fff;
 }
 .dataTable-table {
-    width: 100%;
-    max-width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 .align-middle {
-    vertical-align: middle!important;
+  vertical-align: middle !important;
 }
 .border-0 {
-    border: 0!important;
+  border: 0 !important;
 }
-.table>thead {
-    vertical-align: bottom;
+.table > thead {
+  vertical-align: bottom;
 }
-tbody, td, tfoot, th, thead, tr {
-    border: 0 solid;
-    border-color: inherit;
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border: 0 solid;
+  border-color: inherit;
 }
-.card-table .table tr td:first-child, .card-table .table tr th:first-child {
-    padding-left: 2rem;
+.card-table .table tr td:first-child,
+.card-table .table tr th:first-child {
+  padding-left: 2rem;
 }
-.table>:not(:last-child)>:last-child> {
-    border-bottom-color: currentColor;
+.table > :not(:last-child) > :last-child > {
+  border-bottom-color: currentColor;
 }
 .card-table thead th {
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: #fff;
-    background: #343a40;
-    font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #343a40;
+  font-size: 13px;
 }
-a.dataTable-sorter{
-    color: white;
-    text-decoration: none;
+a.dataTable-sorter {
+  color: white;
+  text-decoration: none;
 }
 .card-table .dataTable-bottom {
-    padding: 2rem;
-    background: #f8f9fa;
-    margin-bottom: 2%;
+  padding: 2rem;
+  background: #f8f9fa;
+  margin-bottom: 2%;
+}
+.dataTable-bottom > nav:last-child {
+  float: right;
+}
+nav {
+  display: block;
+}
+.dataTable-bottom > div:first-child {
+  float: left;
+}
+.dataTable-info {
+  margin: 7px 0;
+}
+.text-lg {
+  font-size: 1.125rem !important;
+}
+.text-success,
+.text-success-hover:hover {
+  color: seagreen !important;
+}
+.me-3 {
+  margin-right: 1rem !important;
 }
 .dataTable-bottom>nav:last-child {
     float: right;
@@ -253,21 +500,31 @@ a.dataTable-sorter{
 nav {
     display: block;
 }
-.dataTable-bottom>div:first-child {
-    float: left;
+.dataTable-pagination ul {
+    margin: 0;
+    padding-left: 0;
 }
-.dataTable-info {
-    margin: 7px 0;
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
 }
 .dataTable-pagination li {
     float: left;
     list-style: none;
 }
-.dataTable-pagination ul {
-    margin: 0;
-    padding-left: 0;
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
-.dataTable-pagination .active a, .dataTable-pagination .active a:focus, .dataTable-pagination .active a:hover {
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.dataTable-pagination .active a {
     cursor: default;
     background-color: #d9d9d9;
 }
@@ -283,21 +540,16 @@ nav {
 a {
     transition: all .3s;
 }
-.dataTable-pagination a:hover{
-    background-color: #d9d9d9;
+@media (min-width: 992px) {
+  .px-lg-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
 }
-@media (min-width: 992px){
-    .px-lg-4 {
-        padding-right: 1.5rem!important;
-        padding-left: 1.5rem!important;
-    }
+@media (min-width: 1200px) {
+  .px-xl-5 {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+  }
 }
-@media (min-width: 1200px){
-    .px-xl-5 {
-        padding-right: 3rem!important;
-        padding-left: 3rem!important;
-    }
-}
-
-
 </style>

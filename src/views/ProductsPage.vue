@@ -23,9 +23,6 @@ export default {
 </script>
 
 <style>
-body{
-    margin-top:-3.8%;
-}
 
 /* .charts{
   display: flex;

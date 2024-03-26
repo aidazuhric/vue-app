@@ -1,7 +1,7 @@
 import { reactive } from 'vue';
 
 export const store = reactive({
-    isNavOpen: false
+    isNavOpen: true
 });
 
 export const mutations = {
