@@ -143,7 +143,6 @@ h3 {
 
 }
 label{
-  display: inline-block;
     cursor: default;
     float: inherit
 }

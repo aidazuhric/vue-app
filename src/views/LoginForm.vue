@@ -270,7 +270,7 @@ a {
     cursor: default;
 }
 label{
-  display: inline-block;
+
     cursor: default;
     float: inherit
 }
