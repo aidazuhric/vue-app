@@ -112,6 +112,60 @@ export default {
     };
   }
 }
+
+//If you have a real database and API your export default should look like this:
+//You can also add 'vuelidate' validations on input fields if you like
+
+// export default {
+//     name: 'Register',
+//     data() {
+//         return{
+//             name: '',
+//             lastName: '',
+//             username: '',
+//             password: '',
+//             confirmPw: '',
+//             showPw: false,
+//             email: '',
+//             address: '',
+//             city: '',
+//             zipCode: '',
+//             checked: '',
+//             submitStatus: null,
+//         }
+//     },
+//     methods: {
+//         async register() {
+//             console.log("registering")
+//             var body= {
+//                 "name":this.name,
+//                 "lastName":this.lastName,
+//                 "username":this.username, 
+//                 "password":this.password,
+//                 "email":this.email,
+//                 "address":this.address,
+//                 "city":this.city,
+//                 "zipCode":this.zipCode
+//             }
+//             this.$v.$touch()
+//             if(!this.$v.$invalid){
+//                 this.submitStatus = "Registration failed."
+//             }
+
+//             this.$request
+//             .post('/User', JSON.stringify(body))
+//             .then(() => {
+//                 // this.msg = "You have been succesfully registered!";
+//                 // this.classAlert = "success";
+//                 this.$router.push({name: 'login'});
+//             })
+//             .catch(err => {
+//                 // this.msg = err.response.data.messages.error;
+//                 console.log(err);
+//             })
+//         },
+//     }
+// }
 </script>
 
 

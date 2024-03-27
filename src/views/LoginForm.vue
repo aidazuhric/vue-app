@@ -57,6 +57,60 @@
         console.log('Logging in...');
       }
     }
+    // If you have real API with JWT authentication your call should look like this
+    // methods: {
+    //     async login() {
+    //         console.log("logging in")
+    //         var body= {
+    //             "username":this.userName, 
+    //             "password":this.password
+    //         }
+
+    //         this.$v.$touch()
+    //         if(!this.$v.$invalid){
+                
+
+    //         this.$request
+    //         .post('/Login', JSON.stringify(body))
+    //         .then((res) => {
+    //             if (res.data && res.data.length > 0) {
+    //                 let tokenData = this.parseJwt(res.data);
+    //                 let userId = tokenData.id.replace(/-/g, '');
+    //                 let date = new Date(tokenData.exp * 1000);
+
+    //                 localStorage.setItem("userToken", res.data);
+    //                 localStorage.setItem("userId", userId);
+    //                 localStorage.setItem("expirationToken", date)
+
+    //                 this.$router.push({name: 'home'});
+    //             }
+    //         })
+    //         .catch((error) => {
+    //             if (error.status) {
+    //                 if(error.status === 401){
+    //                     this.submitStatus = "Incorrect password or username"
+    //                 }
+    //             }
+    //             else {
+    //                 console.log(error);
+    //             }
+    //         })
+    //         } else{
+    //             this.submitStatus = "Incorrect password or e-mail!"
+    //         }
+    //     },
+           //ensure that the token is correctly formatted JWT
+    //     parseJwt (token) {
+    //         var base64Url = token.split('.')[1];
+    //         var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    //         var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+    //             return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    //         }).join(''));
+
+    //         return JSON.parse(jsonPayload);
+    //     }
+        
+    // }
   }
   </script>
 

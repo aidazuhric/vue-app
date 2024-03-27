@@ -17,8 +17,8 @@ export default {
         PageHeader,
         PageSidebar,
         ProductsTable
-    }
-};
+    },
+}
 
 </script>
 
