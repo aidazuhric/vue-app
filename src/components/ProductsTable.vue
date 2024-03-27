@@ -66,6 +66,8 @@ export default {
   }
 }
 </script>
+
+/* eslint-disable */
 <style>
 div {
   display: block;
@@ -246,13 +248,6 @@ button:not(:disabled) {
   cursor: pointer;
 }
 
-[type="button"],
-[type="reset"],
-[type="submit"],
-button {
-  -webkit-appearance: button;
-}
-
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   isolation: isolate;
@@ -322,9 +317,6 @@ h4 {
   margin-inline-end: 0px;
 }
 
-/* .mb-4 {
-  margin-bottom: 1.5rem !important;
-} */
 .dataTable-wrapper {
   background: #f8f9fa;
   overflow-x: auto;
@@ -342,7 +334,6 @@ h4 {
 }
 
 label {
-  display: inline-block;
   cursor: default;
   float: right;
   margin-bottom: 3%;
